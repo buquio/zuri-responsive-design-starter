@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">Snapshot</div>
+    <div class="header">
+        <div class="logo"><i class="fab fa-snapchat-ghost"></i>  Snapshot</div>
+
+        
+
+    <nav id="nav-bar" class="navbar">
+       <div class="toggle-icon"><i class="fa fa-bars"></i></div>
+
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="links" href="#">Home</a></li>
+            <li><a class="links" href="#">About</a></li>
+            <li><a class="links" href="#">Gallery</a></li>
+            <li><a class="links" href="#">Contact</a></li>
         </ul>
+    </nav>
+
     </div>
 
     <!-- Hero section -->
-
     <div class="hero-section">
         <div class="hero-content-heading">
             <h3>Let's take a snapshot</h3>
@@ -30,7 +44,7 @@
         </div>
     </div>
 
-    <!-- sub-hero section -->
+    <!-- background section -->
     <div class="hero-background">
         <div class="background">
             <h4>Background</h4>
@@ -38,6 +52,8 @@
         </div>
         <div class="hero-background-pos"></div>
     </div>
+
+    <!-- snapshot team  -->
     <div class="snapshot-team">
         <h2>Snapshot Team</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
@@ -103,5 +119,8 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+
+    <script src="index.js"></script>
 </body>
 </html>

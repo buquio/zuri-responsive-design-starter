@@ -7,7 +7,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-div.nav-bar {
+div.header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
@@ -19,6 +19,33 @@ div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
 }
+
+div.toggle-icon {
+    display: block;
+}
+
+/* ----------------- */
+div.toggle-icon{
+    display: block;
+    font-size: 1.2em;
+    align-self: center;
+    cursor: pointer;
+    color: #bcc3c7;
+
+  } 
+  .toggle-icon:hover{
+    background-color: white;
+ }   
+     
+.navbar {
+   position: relative;
+   /* display: inline-block; */
+}
+.navbar:hover {
+   background-color: white;
+} 
+/* ---------------------   */
+
 
 ul.nav-links {
     display: flex;
@@ -44,6 +71,8 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
+
+/* The hero section */
 div.hero-section {
     background: #304353;
     padding: 10rem;
@@ -87,6 +116,8 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
+
+/* The sub-hero section */
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -130,6 +161,8 @@ div.hero-background-pos {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
+
+/* The snapshot team section */
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
@@ -198,7 +231,7 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
+
 }
 
 div.box1 h5 {
@@ -208,6 +241,9 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+
+
+/* The gallery section */
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -232,10 +268,10 @@ div.gallery-content p {
 }
 
 div.gallery-img {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
 }
 
 div.img {
@@ -243,10 +279,12 @@ div.img {
 }
 
 div.img img {
-    width: 250px;
-    height: 180px;
+    width: 280px;
+    height: 210px;
 }
 
+
+/* The footer section */
 div.footer {
     background: #304353;
     padding: 3rem;
@@ -345,3 +383,631 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+
+
+/*////////////// MOBILE FIRST */
+    @media screen and (min-width:320px) {
+        /* header */
+    div.header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 100vw;
+        background: #304353;
+    }
+
+    
+    div.logo {
+        font-size: 1rem;/**/
+        color: #bcc3c7;
+    }
+    
+    /* ///////////added brand icon  */
+     div.toggle-icon{
+        display: block;
+        font-size: 1.2em;
+        align-self: center;
+        cursor: pointer;
+        color: #bcc3c7;
+    
+      } 
+      .toggle-icon:hover{
+        background-color: white;
+     }   
+         
+    .navbar {
+       position: relative;
+       /* display: inline-block; */
+    }
+    .navbar:hover {
+       background-color: white;
+    }   
+  
+   /* //////////////// */
+
+    ul.nav-links {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center; 
+        text-align: center; 
+        padding: 4em 0 0;
+        display: none;
+        position: absolute;
+        background-color: #304353;
+     /* min-width: 200px; */
+        width: 80%;
+        height: 100vh;
+        z-index: -2;
+    }
+    
+    ul li {
+        /* display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; 
+  padding: 4em 0 0; */
+        display: block;
+        margin: 0 2vw;
+        list-style: none;
+        font-size: 1.1rem;
+    
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #88949B;
+        padding: 0.5vw;
+    /* padding: 12px 16px; */
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #304353;
+    }
+    
+    ul li a:hover {
+        color: #fff;
+        background: #304353;
+        padding: 0.5rem;
+    background-color: #304353;
+
+    }
+    
+    /* hero section  */
+    div.hero-section {
+        background: #304353;
+        padding: 6rem 2rem;/**/
+        width: 80%;/**/
+    }
+    
+    div.hero-content-heading {
+        text-align: center;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.5rem; /**/
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #bcc3c7;
+    }
+    
+    div.hero-content-heading p {
+        text-align: center;
+        padding-top: 0.7rem;
+        color: #88949B;
+        font-size: 1rem;/**/
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+    
+    div.hero-content-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    div.hero-content-btn a {
+        background: #E44C65;
+        text-decoration: none;
+        color: #bcc3c7;
+        font-size: 0.9rem;
+        padding: 10px 30px;
+        border-radius: 3px;
+        letter-spacing: 2px;
+    }
+    
+    
+    /* hero-background section  */
+    div.hero-background {
+        background: #f0f0f0;
+        padding: 6rem 5rem; /**/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.background {
+        background: #fff;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 8px 1px; /**/
+        width: 550px;
+        height: 450px; /**/
+        /* width: 100%; */
+        position: relative;
+    }
+    
+    div.background h4 {
+        padding: 2rem;
+        color: #555657;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center; /**/
+    
+    }
+    
+    div.background p {
+        color: #A6A5AA;
+        padding-left: 2rem;
+        padding-right: 4rem;/**/
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    
+    div.hero-background-pos {
+        position: absolute;
+        right: 0px;
+        left: 60%;/**/
+        background: #fff;
+        width: 100px;/**/
+        height: 100px;/**/
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+    /*snapshot team*/
+    div.snapshot-team {
+        background: #f0f0f0;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+    div.snapshot-team h2 {
+        color: #555657;
+        font-size: 1.2rem; /**/
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    div.snapshot-team p {
+        color: #A6A5AA;
+        font-size: .8rem;/**/
+        letter-spacing: 2px;
+        padding-top: 0.8rem;
+    }
+    
+    /*snapshot box*/
+    div.snapshot-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 4rem 6rem;
+    }
+    
+    div.snapshot-box-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;/**/
+    }
+    
+    div.box1 {
+        background: #fff;
+        padding: 10px 20px;
+        width: 200px;/**/
+        height: 210px;/**/
+        margin: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+    
+    div.box3 {
+        background: #304353;
+        padding: 10px 20px;
+        width: 200px; /**/
+        height: 210px;/**/
+        margin: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+    div.box3 h5 {
+        text-align: center;
+        padding-top: 2rem;
+        color: #E44C65;
+        font-size: 1rem;
+    }
+    
+    div.circle {
+        display: flex;
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: #bcc3c7;
+        margin-top: 2rem;
+        
+    }
+    div.box1 h5 {
+        text-align: center;
+        padding-top: 2rem;
+        color: #E44C65;
+        font-size: 1rem;
+    }
+    
+    
+    /* gallery-section  */
+    div.gallery-section {
+        background: #fff;
+        padding: 4rem;
+    }
+    
+    div.gallery-content {
+        text-align: center;
+        font-size: .6rem;/**/
+    }
+    
+    div.gallery-content h4 {
+        color: #555657;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    div.gallery-content p {
+        color: #A6A5AA;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        padding-top: 0.8rem;
+    }
+    
+    div.gallery-img {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       padding-top: 3rem;
+    
+    }
+    
+    div.img {
+        margin: 10px;
+    }
+    
+    div.img img {
+        width: 200px;
+        height: 180px;
+    }
+    
+    
+    /* footer  */
+    div.footer {
+        background: #304353;
+        padding: 3rem;
+    }
+    
+    div.footer-content {
+        text-align: center;
+    }
+    
+    div.footer-content h4 {
+        color: #bcc3c7;
+        font-size: 1.2rem;/**/
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    div.footer-content p {
+        color: #88949B;
+        font-size: 0.8rem;/**/
+        letter-spacing: 2px;
+        padding-top: 0.8rem;
+    }
+    
+    div.footer-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    
+    input[type="text"] {
+        margin-right: 10px;
+        padding: 5px 15px;
+        width: 40%;/**/
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+        font-size: .8rem;
+        border-radius: 2px;
+        text-align: center;/**/
+    }
+    
+    input[type="email"] {
+        margin-right: 10px;
+        padding: 5px 15px;/**/
+        width: 40%;/**/
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+        font-size: .8rem;/**/
+        border-radius: 2px;
+        text-align: center;/**/
+    
+    }
+    
+    ::placeholder {
+        color: #A6A5AA;
+    }
+    
+    div.footer-textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    textarea {
+        width: 60%; /**/
+        height: 150px;
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+    }
+    
+    div.footer-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    div.footer-btn a {
+        background: #E44C65;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 0.7rem; /**/
+        padding: 5px 15px; /**/
+        border-radius: 3px;
+        letter-spacing: 2px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    div.footer h6 {
+        text-align: center;
+        color: #88949B;
+        font-size: .8rem;/**/
+        padding-top: 6rem;
+    }
+    }
+    
+    
+    
+    
+    @media screen and (min-width:425px) {
+        /* header */
+        div.header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        div.logo {
+            font-size: 1.5rem;
+        }
+    
+        div.toggle-icon {
+            font-size: 1.5rem;
+        }
+    
+    
+        /*hero section*/
+        div.hero-section {
+            padding: 9rem 4rem;
+        }
+    
+        div.hero-content-heading h3 {
+            font-size: 1.6rem;
+        }
+    
+        div.hero-content-heading p {
+            font-size: 1.1rem;
+        }
+    
+    
+        /*hero-background section*/
+        div.hero-background {
+            padding: 8rem 3rem;
+        }
+    
+        div.background {
+            padding: 0px 0.5rem;
+            width: 100%;
+        }
+    
+        div.background h4 {
+            text-align: center;
+            padding: 1.5rem;
+        }
+    
+        div.background p {
+            text-align: center;
+            padding-left: 1rem;
+        }
+    
+        div.hero-background-pos {
+            position: absolute;
+            right: 0px;
+            left: 70%;/**/
+        }
+        
+    
+        /* The snapshot section */
+        div.snapshot-box-content {
+            flex-direction: column;
+            width: 100%;
+            padding: 0 1rem;
+        }
+        div.snapshot-team p {
+            color: #A6A5AA;
+            font-size: .6rem;/**/
+            letter-spacing: 2px;
+            padding-top: 1rem;
+            text-align: center;
+        }
+    
+        /*The gallery section*/
+        div.gallery-section {
+            padding: 0.5rem;
+        }
+    
+    }
+    
+    
+    
+    @media screen and (min-width:768px) {
+        /* header */
+        div.header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        div.logo {
+            font-size: 2rem;
+        }
+    
+        div.toggle-icon {
+            font-size: 25px;
+            display: none;
+        }
+        
+         ul.nav-links {
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 4em 0 0;
+            display: block;
+           }
+
+
+    ul li {
+            display: block;
+            margin: 0 2vw;
+            list-style: none;
+            font-size: 1.1rem;
+        }
+        /* hero section */
+        div.hero-section {
+            padding: 8rem 1.5rem;
+        }
+    
+        div.hero-content-heading h3 {
+            font-size: 2rem;
+        }
+    
+        div.hero-content-heading p {
+            font-size: 1.2rem;
+        }
+    
+    
+        /* hero-background section */
+        div.hero-background {
+            padding: 8rem 4rem;
+        }
+        div.background {
+            padding: 0px 0.1rem;
+            /* width: 500px; */
+            height: 400px;
+            width: 100%; 
+        }
+        
+        div.background h4 {
+            padding: 1.6rem;
+            font-size: 1.3rem;
+        }
+    
+        div.background p {
+            padding: 0.1rem;
+            font-size: 1.3rem;
+            padding-right: 3rem;
+        }
+        div.hero-background-pos {
+            position: absolute;
+            right: 0px;
+            left: 80%;
+            width: 140px;/**/
+            height: 140px;/**/
+        }
+        
+        /* snapshot box section */
+        div.snapshot-team {
+            padding: 0 0.3rem;
+        }
+    
+        div.snapshot-team h2 {
+            font-size: 1.3rem;
+        }
+    
+        div.snapshot-team p {
+            font-size: 1.2rem;
+        }
+    
+        div.snapshot-box {
+            padding: 2rem 0 4rem 0;
+        }
+        
+    
+        div.snapshot-box-content {
+            padding: 0 3rem;
+        flex-direction: row;
+    
+        }
+    
+        div.box1 {
+            margin: 10px 0;
+        }
+    
+        /* gallery section */
+        div.gallery-section {
+            padding: 2rem 0 0 0;
+        }
+        div.gallery-content p {
+            font-size: 1.3rem;
+            padding-top: 1rem;
+        }
+        div.img img {
+            width: 250px;
+            height: 220px;
+        }
+        
+        
+        /* footer  */
+    
+        div.footer-content h4 {
+            font-size: 1.5rem;/**/
+        }
+        
+        div.footer-content p {
+            font-size: 1.2rem;/**/
+        }
+    }
