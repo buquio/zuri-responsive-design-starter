@@ -21,22 +21,22 @@ div.logo {
 }
 
 
+ /*added   */
+/* <!-- toogle with javascript  --> */
 div.toggle-icon{
+    display: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: #bcc3c7;
-    display: none; 
   } 
-  div.toggle-icon:hover{
-    background-color: white;
- }   
+  
  
-
-ul.nav-links {
+ ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
-}
+    
+   }
 
 ul li {
     margin: 0 2vw;
@@ -48,6 +48,7 @@ ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
+
 }
 
 ul li a:hover {
@@ -138,7 +139,7 @@ div.background p {
 div.hero-background-pos {
     position: absolute;
     right: 0px;
-    left: 66%;
+    left: 70%;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -371,170 +372,160 @@ div.footer h6 {
 
 
 
+  /*////////////// @MEDIA /////////////////*/
+/* /////////////////////// */
+/* @media screen and (min-width:320px) { */
+@media screen and (max-width:768px) {
+
+    /* header */
+div.header {
+    padding: 1rem 2rem;
+}
+
+div.logo {
+    font-size: 1.2rem;
+}
+
+  div.toggle-icon{
+    font-size: 1.2rem;
+    display: block;
+  } 
+
+ul.nav-links {
+display: none;
+
+}
 
 
-/* MOBILE FIRST */
-    @media screen and (min-width:320px) {
-        /* header */
-    div.header {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        width: 100vw;
-        background: #304353;
+/* hero section  */
+div.hero-section {
+    padding: 6rem 2rem;
+}
+
+div.hero-content-heading h3 {
+    font-size: 1.5rem; 
+}
+
+
+/* hero-background section  */
+div.hero-background {
+    padding: 6rem 5rem; 
     }
 
-    
-    div.logo {
-        font-size: 1rem;/**/
-        color: #bcc3c7;
+div.background {
+    padding: 8px 1px; 
+    height: 100%; 
+    width: 100%;
+}
+
+div.background h4 {
+    text-align: center; 
+
+}
+
+div.background p {
+    padding-right: 4rem;
+}
+
+div.hero-background-pos {
+    left: 75%;
+    width: 100px;
+    height: 100px;
+}
+
+/*snapshot team section*/
+
+div.snapshot-team h2 {
+    font-size: 1.2rem; 
+}
+
+div.snapshot-team p {
+    font-size: .8rem;
+}
+
+/*snapshot box*/
+
+div.snapshot-box-content {
+    flex-direction: column;
+}
+
+div.box1 {
+    width: 200px;
+    height: 210px;
+}
+
+
+div.box3 {
+    width: 200px; 
+    height: 210px;
+}
+
+
+/* gallery-section  */
+div.gallery-content {
+    text-align: center;
+    font-size: .6rem;
+}
+
+div.img img {
+    width: 200px;
+    height: 180px;
+}
+
+
+/* footer  */
+
+div.footer-content h4 {
+    font-size: 1.2rem;
+}
+
+div.footer-content p {
+    font-size: 0.8rem;
+}
+
+
+
+input[type="text"] {
+    padding: 5px 15px;
+    width: 40%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+input[type="email"] {
+    padding: 5px 15px;
+    width: 40%;
+    font-size: .8rem;
+    text-align: center;
+
+}
+
+textarea {
+    width: 60%; 
     }
-    
-     div.toggle-icon{
-        display: block;
-        font-size: 1.2em;
-      } 
-      
-      ul.nav-links {
-        display: none;
-    
-       }
-    
-    
-    /* hero section  */
-    div.hero-section {
-        padding: 6rem 2rem;
-        width: 80%;
-    }
-    
-    div.hero-content-heading h3 {
-        font-size: 1.5rem; 
-    }
-    
-    
-    /* hero-background section  */
-    div.hero-background {
-        padding: 6rem 5rem; 
-        }
-    
-    div.background {
-        padding: 8px 1px; 
-        width: 550px;
-        height: 450px; 
-        /* width: 100%; */
-    }
-    
-    div.background h4 {
-        text-align: center; 
-    
-    }
-    
-    div.background p {
-        padding-right: 4rem;
-    }
-    
-    div.hero-background-pos {
-        left: 60%;
-        width: 100px;
-        height: 100px;
-    }
-    
-    /*snapshot team section*/
-    
-    div.snapshot-team h2 {
-        font-size: 1.2rem; 
-    }
-    
-    div.snapshot-team p {
-        font-size: .8rem;
-    }
-    
-    /*snapshot box*/
-    
-    div.snapshot-box-content {
-        flex-direction: column;
-    }
-    
-    div.box1 {
-        width: 200px;
-        height: 210px;
-    }
-    
-    
-    div.box3 {
-        width: 200px; 
-        height: 210px;
-    }
-    
-    
-    /* gallery-section  */
-    div.gallery-content {
-        text-align: center;
-        font-size: .6rem;
-    }
-    
-    div.img img {
-        width: 200px;
-        height: 180px;
-    }
-    
-    
-    /* footer  */
-    
-    div.footer-content h4 {
-        font-size: 1.2rem;
-    }
-    
-    div.footer-content p {
-        font-size: 0.8rem;
-    }
-    
-    
-    
-    input[type="text"] {
-        padding: 5px 15px;
-        width: 40%;
-        font-size: .8rem;
-        text-align: center;
-    }
-    
-    input[type="email"] {
-        padding: 5px 15px;
-        width: 40%;
-        font-size: .8rem;
-        text-align: center;
-    
-    }
-    
-    textarea {
-        width: 60%; 
-        }
-    
-    
-    div.footer-btn a {
-        font-size: 0.7rem; 
-        padding: 5px 15px; 
-        width: 50%;
-        text-align: center;
-    }
-    
-    div.footer h6 {
-        font-size: .8rem;
-    }
-    
-    }
-    
-     
-   
-    
-    
-    
-    @media screen and (min-width:425px) {
-    
+
+
+div.footer-btn a {
+    font-size: 0.7rem; 
+    padding: 5px 15px; 
+    width: 50%;
+    text-align: center;
+}
+
+div.footer h6 {
+    font-size: .8rem;
+}
+
+}
+
+ 
+    /* /////////////////////////// */
+    /* @media screen and (min-width:425px) { */
+    @media screen and (max-width:425px) {
+
         /* header */
         div.header {
             padding: 1rem;
-            
         }
     
         div.logo {
@@ -543,11 +534,8 @@ div.footer h6 {
     
         div.toggle-icon {
             font-size: 1.5rem;
-            display: block;
-
         }
-    
-    
+
         /*hero section*/
         div.hero-section {
             padding: 9rem 4rem;
@@ -585,22 +573,22 @@ div.footer h6 {
         div.hero-background-pos {
             position: absolute;
             right: 0px;
-            left: 70%;/**/
+            left: 70%;
         }
         
     
         /* The snapshot section */
+        
+        div.snapshot-team p {
+            font-size: .6rem;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
         div.snapshot-box-content {
             flex-direction: column;
             width: 100%;
             padding: 0 1rem;
-        }
-        div.snapshot-team p {
-            color: #A6A5AA;
-            font-size: .6rem;/**/
-            letter-spacing: 2px;
-            padding-top: 1rem;
-            text-align: center;
         }
     
         /*The gallery section*/
@@ -611,121 +599,3 @@ div.footer h6 {
     }
     
     
-    
-    @media screen and (min-width:768px) {
-        /* header */
-        div.header {
-            padding: 1.2rem;
-        }
-    
-        div.logo {
-            font-size: 1.5rem;
-        }
-    
-        div.toggle-icon {
-            display: none;
-        }
-        
-         ul.nav-links {
-            display: block;
-           }
-    
-   
-        /* hero section */
-        div.hero-section {
-            padding: 8rem 0.5rem;
-        }
-    
-        div.hero-content-heading h3 {
-            font-size: 1.2rem;
-        }
-    
-        div.hero-content-heading p {
-            font-size: 0.8rem;
-        }
-    
-    
-        /* hero-background section */
-        div.hero-background {
-            padding: 8rem 4rem;
-        }
-        div.background {
-            padding: 0px 0.1rem;
-            /* width: 500px; */
-            height: 400px;
-            width: 100%; 
-        }
-        
-        div.background h4 {
-            padding: 1.6rem;
-            font-size: 1.3rem;
-        }
-    
-        div.background p {
-            padding: 0.1rem;
-            font-size: 1.3rem;
-            padding-right: 3rem;
-        }
-        div.hero-background-pos {
-            position: absolute;
-            right: 0px;
-            left: 80%;
-            width: 140px;/**/
-            height: 140px;/**/
-        }
-        
-        /* snapshot box section */
-        div.snapshot-team {
-            padding: 0 0.3rem;
-        }
-    
-        div.snapshot-team h2 {
-            font-size: 1.3rem;
-        }
-    
-        div.snapshot-team p {
-            font-size: 1.2rem;
-        }
-    
-        div.snapshot-box {
-            padding: 2rem 0 4rem 0;
-        }
-        
-    
-        div.snapshot-box-content {
-            padding: 0 3rem;
-        flex-direction: row;
-    
-        }
-    
-        div.box1 {
-            margin: 10px 0;
-        }
-    
-        /* gallery section */
-        div.gallery-section {
-            padding: 2rem 0 0 0;
-        }
-        div.gallery-content p {
-            font-size: 1.3rem;
-            padding-top: 1rem;
-        }
-        div.img img {
-            width: 250px;
-            height: 220px;
-        }
-        
-        
-        /* footer  */
-    
-        div.footer-content h4 {
-            font-size: 1.5rem;/**/
-        }
-        
-        div.footer-content p {
-            font-size: 1.2rem;/**/
-        }
-        div.footer-btn a {
-            font-size: 1.2rem;
-        }
-    }
